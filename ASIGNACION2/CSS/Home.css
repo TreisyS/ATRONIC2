@@ -1,0 +1,177 @@
+body{
+background-color: #000;
+color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.videotop
+{
+    position: relative;
+
+}
+video{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+h1{
+    background-color: #000000b6;
+    font-size: 220px;
+    text-align: center;
+    font-weight: 400;
+    mix-blend-mode: multiply;
+    
+}
+
+/*BARRAAAALATERAL NO TE CONFUNDAS*/
+
+.sidebarra
+{
+    width: 60px;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ffffffde;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+   
+}
+
+.sidebarra:hover
+{
+   width: 200px; 
+}
+
+.sidebarra:hover > .item > .text
+{
+    opacity: 1;
+}
+
+
+.item{
+    display: flex;
+    align-items: center;
+    margin:20px 0;
+}
+
+.item .icon
+{
+    width: 40px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: #424242;
+}
+.item .text{
+  
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    transition-delay: .2s;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+.text{
+    color:#000;
+}
+a{
+    text-decoration: none;
+}
+/*AQUI TERMINA LA SIDEBAR*/
+
+/*CONTENIDO*/
+
+.CONTENEDORPRINCIPAL
+
+{
+  
+    display: GRID;
+    grid-template-columns: 100px 1400px;
+    grid-template-rows: 100px  1200px;
+}
+.contenidogaleria
+{
+    grid-row: 2;
+    grid-column: 2;
+    background-color:#d4dfe1;
+    border-radius: 1cm;
+    overflow: hidden;
+  
+    padding: 3cm;
+  
+}
+.Galeria 
+{
+    display: GRID;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap:1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x mandatory;
+    scrollbar-width:none;
+    width: 400px;
+    padding: 0cm 19.6cm 7cm 0cm;
+    margin-bottom: 3cm;
+}
+.itemsgaleria
+{
+   
+    width: 20vh;
+    height: 10vh;
+    background-color: lightblue;
+    margin-right:9cm;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+
+.itemsgaleria img {
+  
+    object-fit: cover; 
+    transition: transform 0.3s, filter 0.3s; /* Transiciones para el efecto */
+}
+
+.itemsgaleria:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.3); 
+}
+.SubTema
+{
+    font-size: 30px;
+    grid-column: 2;
+    grid-row: 1;
+background-color: #273f40;
+    margin: 0cm;
+    height: 100px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1cm 1cm;
+}
+.leftSide
+{
+    z-index: 1;
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column: 1/2;
+   
+    width: 10%;
+    height: auto;
+}
+
+
+
+/*CARRUSEL DE FOTOS*/
+
+

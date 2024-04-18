@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/TODO.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martel:wght@800&family=Outfit:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+       <h1 id="Tittle">TO-DO LIST</h1>
+       <hr>
+<div class="CONTENEDORPRINCIPAL">   <div class="sidebarra">
+       <div class="item">
+        <a href="homee.html"><img class="icon" src="FOTOS/Iconos/Home.png"/></a>
+   <div class="text">Home</div>
+       </div>
+    <hr>
+    
+       <div class="item"><a href="Calculadora.html"><img class="icon" src="FOTOS/Iconos/Numeros.png"/></a>
+        
+        <div class="text">Numeros</div>
+               </div>
+   
+   
+               <div class="item">
+                <a href="Todo.html"><img class="icon" src="FOTOS/Iconos/Todo.png"/></a>
+                <div class="text">To do List</div>
+                       </div>
+        
+                       <div class="item">
+                        <a href="homee.html"><img class="icon" src="FOTOS/Iconos/Galeria.png"/></a>
+                        <div class="text">Galeria</div>
+                               </div>
+                               <div class="item">
+                                      <a href="Inicio.html"><img class="icon" src="FOTOS/Iconos/Item.png"/></a>
+                                      <div class="text">Inicio</div>
+                                             </div>
+    </div>
+
+
+<div class="contenido">
+       <div class="Column1">
+              <h1> Agregar tarea:</h1>
+            
+<form id="Form-Tareas">
+<div class="Form-Grupo">
+       <input type="text" id="title" class="Control" maxlength="50" autocomplete="off" placeholder="Tittle" required>
+
+</div>
+<div class="Form-Grupo">
+       <textarea type="text" id="descripcion" cols="30" rows="10" class="Control" maxlength="500" autocomplete="off" placeholder="descripcion">
+
+       </textarea>
+</div>
+<button type="submit" class="BtnGuardar"> Agregar </button>
+
+</form>
+</div>
+
+<div class="column2">
+       <div class="Tit">
+              <p class="Titulos2da">Title</p>
+       </div>
+
+       <div class="Tit">
+              <p class="Titulos2da">descripcion</p>
+       </div>
+
+       <div class="Tit">
+              <p class="Titulos2da">Delete</p>
+       </div>
+       
+       <hr id="separador">
+       <div id="tasks"></div>
+</div>
+
+<hr id="separador">
+
+
+
+</div>
+
+</div>
+
+<script src="TODO.JS"></script>
+</body>
+</html>

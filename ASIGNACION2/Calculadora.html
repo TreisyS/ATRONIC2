@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/CSSCALCULADORACONTADOR.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="sidebarra">
+    <div class="item">
+     <a href="homee.html"><img class="icon" src="FOTOS/Iconos/Home.png"/></a>
+<div class="text">Home</div>
+    </div>
+ <hr>
+ 
+    <div class="item"><a href="Calculadora.html"><img class="icon" src="FOTOS/Iconos/Numeros.png"/></a>
+     
+     <div class="text">Numeros</div>
+            </div>
+
+
+            <div class="item">
+             <a href="Todo.html"><img class="icon" src="FOTOS/Iconos/Todo.png"/></a>
+             <div class="text">To do List</div>
+                    </div>
+     
+                    <div class="item">
+                     <a href="homee.html"><img class="icon" src="FOTOS/Iconos/Galeria.png"/></a>
+                     <div class="text">Galeria</div>
+                            </div>
+                            <div class="item">
+                                <a href="Inicio.html"><img class="icon" src="FOTOS/Iconos/Item.png"/></a>
+                                <div class="text">Inicio</div>
+                                       </div>
+ </div>
+    <div class="contenedor">
+        <h1> Calculadora</h1>   <h1> Contador </h1>
+<div class="calculador">
+    
+    <form name = "calculadora">
+
+        <input id = "barra" type="textfield" name="Relleno" value="" autocomplete="off" readonly>
+        <br>
+        <input id = "botones" type="button" value="7" onclick="document.calculadora.Relleno.value += '7'">
+        <input id = "botones" type="button" value="8" onclick="document.calculadora.Relleno.value += '8'">
+        <input id = "botones" type="button" value="9" onclick="document.calculadora.Relleno.value += '9'">
+        <input id = "botones" type="button" value="+" onclick="document.calculadora.Relleno.value += '+'">
+        <br>
+        <input id = "botones" type="button" value="4" onclick="document.calculadora.Relleno.value += '4'">
+        <input id = "botones" type="button" value="5" onclick="document.calculadora.Relleno.value += '5'">
+        <input id = "botones" type="button" value="6" onclick="document.calculadora.Relleno.value += '6'">
+        <input id = "botones" type="button" value="-" onclick="document.calculadora.Relleno.value += '-'" >
+        <br>
+        <input id = "botones" type="button" value="1" onclick="document.calculadora.Relleno.value += '1'">
+        <input id = "botones" type="button" value="2" onclick="document.calculadora.Relleno.value += '2'" >
+        <input id = "botones" type="button" value="3" onclick="document.calculadora.Relleno.value += '3'">
+        <input id = "botones" type="button" value="X" onclick="document.calculadora.Relleno.value += 'X'">
+        <br>
+        <input id = "botones" type="button" value="0" onclick="document.calculadora.Relleno.value += '0'">
+        <input id = "botones" type="button" value="C" onclick="document.calculadora.Relleno.value = ''">
+        <input id = "botones" type="button" value="=" onclick="document.calculadora.Relleno.value=eval(document.calculadora.Relleno.value)">
+        <input id = "botones" type="button" value="/" onclick="document.calculadora.Relleno.value += '/'">
+        
+        
+</div>
+
+       
+<br>
+
+
+
+        </form>
+  
+
+        
+    <div id="contain">
+        <P> Haz click para contar:</P>
+        <input name="mo" type="button" value="1" id="contador">
+        <input name="moo" type="button" value="Reset" id="reset">
+    </div>
+
+
+
+  <script src="JsonContador.js"></script>
+</body>
+</html>

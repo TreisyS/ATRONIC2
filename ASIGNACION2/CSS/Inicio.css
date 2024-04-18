@@ -1,0 +1,95 @@
+body
+{
+background-color: black;
+
+}
+.hand
+{
+width: 16cm;
+height:auto;
+margin-left: 2cm;
+margin-top: 2cm;
+grid-column: 1;
+background-color: black;
+margin-right: 1cm;
+animation: EntrarDesdeAbajo .999999999999s ease;
+}
+header 
+{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    
+}
+
+
+#EscritorioContenedor
+{
+color: white;
+margin-left:1cm;
+    margin-top: 6cm;
+   height: 4cm;
+   width: 19cm;
+
+
+    grid-column: 2;
+
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   font-family: monospace;
+   font-size: 24px;
+}
+
+a:hover::after {
+    color: #BC8F8F; 
+    content: " ►"; 
+}
+
+span
+{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width:42ch;
+    font-size: 26px;
+
+
+
+    animation: typing 2s steps(42),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing 
+{
+    from 
+    {
+        width: 0
+    }
+}
+@keyframes blink 
+{
+    50%
+    {
+        border-color: transparent;
+    }
+}
+
+
+
+
+@keyframes EntrarDesdeAbajo
+{
+
+    from
+    {
+    transform: translateY(100%);
+    }
+to{
+      transform: translateY(0%);  
+   }
+
+}
